@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+.nav-link::after{
+    
+position: absolute;
+content: '';
+width: 0;
+height: 20%;
+background-color: brown;
+left: 0;
+bottom: 0;
+transition: all 0.4s;
+}
+.nav-link:hover::after{
+width:60px;
+}
+.nav-link:hover{
+    color: aqua;
+    font-size: 20px;
+}
+.carousel-item
+{
+    min-height: 200px;
+    height: 100vh;
+}
+.carousel-caption
+{
+    bottom: 100px;
+  
+}
+
+.w-100{
+height: 100vh;
+}
+.carousel-caption h5{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.carousel-caption p{
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.sec{
+    background-color: #eeeeee;
+    height:auto;
+}
+.data {
+padding-top: 150px;
+font-size: 250px;
+text-transform: uppercase;
+font-weight: 400;
+    font-size: 30px;
+}
+.data1{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.btn{
+  
+    display: block;
+
+    background-color:RED;
+    border-radius:15px;
+   
+}
+.sec-1{
+    height: auto;
+}
+.sec-1 h5 {
+    display: block;
+text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    margin: auto;
+}
+.sec-1 h1{
+    text-align: center;
+}
+.sec-1 h4{
+    font-size: 11px;
+    font-weight: 300px;
+  text-align: start;
+}
+.sec-1 p{
+    display: block;
+    text-align: start;
+    padding-left: 10px;
+
+
+}
+.sec-1 h2{
+  padding-top: -100px;
+}
+.sec-2{
+    background-color: #eeee;
+    height: auto;
+}
+.h-101{
+    background-color: red;
+}
+
+.but{
+  background: #b87d30!important;
+          background: -webkit-linear-gradient(To right ,#fd7e14,#06c0c7)!important;
+          background: linear-gradient(To right,#fd7e14,#06c0c7)!important;
+          border-radius: 20px 0px;
+          border: 3px solid white!important;
+          color: #ffffff!important;
+}
+.sec-3{
+    background-image: url('./images/stats-bg.jpg');
+background-size: cover;
+height: 400px;
+z-index: -1;
+opacity: 0.33;
+
+}
+.sec-3 h1{
+    
+    padding-top: 200px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* .sec-3 h1{
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+} */
+.sec-4 h5{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+.sec-4 h1{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.sec-4 ul li{
+    /* display: block;
+    margin: auto;
+    text-align: center; */
+    padding-left: 100px;
+    text-align: center;
+}
+.nav-link:hoversur
+{
+color: #fd7e14;
+}
+.sec-4 h1{
+    text-align: center;
+    margin: auto;
+    display: block;
+}  
+  h3{
+    display: block;
+    margin: auto;
+
+    position: relative;
+    padding: 05px;
+}
+h3::after{
+    position: absolute;
+    content: '';
+   height: 10px;
+    width: 0;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    background-color: #06c0c7;
+    transition: 0.44s;
+
+    
+}
+h3:hover::after{
+    width:10%;
+  
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.sec-5 h5{
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.sec-5{
+    background:#eeee;
+    width: 100%;
+    background-size: cover;
+}
+
+.sec-6 h1{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.sec-6 h2{
+    display: block;
+    text-align: center;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: auto;
+  
+}
+.sec-6 h2::first-letter
+{
+    color: #e10b0b;
+}
+.sec-6 h2:hover
+{
+    color: #0e91a3;
+}
+.sec-6 img{
+    height: 500px;
+    width:2000%;
+}
+.sec-8 input{
+    padding-left: 05px;
+}
+/* .h-cus{
+    height: 1000%;
+    width: 8000%;
+} */
+
+.sec-7 h5{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.sec-7 h1{
+    text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sec-7 h1:hover::first-letter{
+    color: #e10b0b;
+}
+.social a i{
+    bottom: 20px;
+}
+.member h4{
+    text-align: center;
+}
+ span{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.sec-8 h5{
+    text-align: center;
+}
+.sec-8 h5{
+    text-align: center;
+}
+textarea{
+    padding: 30px;
+}
+.img-area.h-cus{
+    width:100%;
+}
+.bg-2 {
+	background-image: url('./images/gallery/gallery-1.jpg');
+
+}
+.bg-3 {
+	background-image: url('./images/gallery/gallery-2.jpg');
+}
+.bg-1{
+    background-image: url('./images/gallery/gallery-3.jpg');
+}
+.bg-1, .bg-2, .bg-3 {
+	-webkit-background-size: cover;
+	background-size: cover;
+  
+}
+
+.sec-1 .carousel-indicators button  {
+
+    width: 70px;
+    bottom: 67px;
+}
+.carousel-indicators img{
+    display: block;
+   padding-top: 40px;
+    margin: auto;
+}
+.sec-10 h5{
+    text-align: center;
+    
+}
+.sec-10 h1{
+ text-align: center;
+}
+iframe{
+display: block;
+text-align: center;
+width:100%;
+}
+.sec-11 h5{
+    font-size: 15px;
+    color: #06c0c7;
+
+    height: 100px;
+   
+}
+input text:hover{
+    color: #e10b0b;
+}
+
+.btn
+{
+    background: #06c0c7;
+    background: linear-gradient(To right,#fd7e14,#13455b);
+    background: -webkit-linear-gradient(To right,#fd7e14,#06c0c7);
+    border-radius: 0 25px;
+    border: 1px solid white;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.sec-12 {
+    background-color: #020506;
+}
+
+.sec-12 .bi
+{
+    padding-right: 20px!important;
+    letter-spacing: 4px;
+}
+.social .bi{
+color: #eeeeee;
+font-size: 20px;
+padding-left: 10px;
+}
+.sec-12 footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width:768px)
+{
+    .owl-carousel .owl-theme{
+        width: 300vh;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .sec-8 input{
+        font-size: 10px;
+        width:100%
+    }
+}
+</style>
+</head>
+<body>
+  
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Presento</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-2 mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proftolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bg1.jpg" class=" w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Food Blog</h5>
+              <p>somme of the Tasty Blog food are mentioed belowp>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/food.jpeg" class=" w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+                <h5>Food Blog</h5>
+                <p>some of the Tasty Blog food are mentioed belowp>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/food1.jpeg" class=" w-100" alt="...">
+            <div class="carousel-caption   d-md-block">
+                <h5>Food Blog</h5>
+                <p>some of the Tasty Blog food are mentioed belowp>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+<section class="sec">
+    <div class="container">
+        <div class="row align-content-center" >
+  
+        <div class="col-12     col-md-6">
+     <h1 class="data">Enjoy Your Healthy<br> 
+        Delicious Food</h1>
+        <p class="data1">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. <br>Eum quas beatae cumque eum quaerat.</p>
+        <button type="button" class="btn btn-danger">Book a Table</button> 
+    
+        </div>
+        <div class="col-12     col-md-6 py-5">
+<img class=" img-fluid card-img animate__animated animate__backInDown " style="animation-delay: 1.3s " src="./images/hero-img.png">
+       
+               </div>
+
+                  
+    </div>
+        </div>
+</section>
+
+
+<section class="sec-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <h5>About Us</h5>
+                <h1>Learn More About Us</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 py-5">
+                    <img class="img-fluid card-img" src="./images/about.jpg" alt="Book a Table" title="Book a">
+                 
+                </div>
+                <div class="col-12 col-md-4 py-5">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+ <h4 class="px-3"><i class=" bi bi-check-all">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></h4>
+ <h4 class="px-3"><i class=" bi bi-check-all">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></h4>
+ <h4 class=" text-justify px-3"><i class=" bi bi-check-all">Ullamco laboris nenderit in voluiat nulla pariatur</i>.</h4>
+
+ <p class="text-justify  py-2 px-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep+rehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident </p>
+
+
+ <video control autoplay muted loop  src="./images/chefs/2484652953.mp4  " width="500px"></video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-2">
+    <div class="container">
+        <div class="row justify-content-between py-5">
+<div class="col-12  col-md-4 py-5  h-101">
+    <h1 class="  px-3  py-3">Why Choose <br>Yummy?</h1>
+    <p class="text-justify px-3">Lorem ipsum dolonetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+    <button type="button" class="but">Learn More click</button>
+
+</div>
+<div class="col-12 col-md bg-white    px-5 border border-primary">
+    <div class="text-center" >
+ <h5><i class=" py -5 bi bi-card-text" style="color: red; font-size: 70px;"></i></h5>
+  <h4 class="  py-3">Why Choose Yummy?</h4>
+  <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
+  <button type="button" class="but ">Learn More click</button>
+      </div>
+  </div>
+  <div class="col-12 col-md bg-white border border-primary px-5  ">
+    <div class="text-center" >
+       
+        <h5><i class=" py -5 bi bi-gem" style="color: red; font-size: 70px;"></i></h5>
+  <h4 class="  py-3">Why Choose Yummy?</h4>
+  <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
+  <button type="button" class="but">Learn More click</button>
+      </div>
+  </div>
+  <div class="col-12 col-md bg-white  border border-primary  px-5">
+    <div class="text-center" >
+        <h5><i class=" py -5 bi bi bi-briefcase" style="color: red; font-size: 70px;"></i></h5>
+  <h4 class="  py-3">Why Choose Yummy?</h4>
+
+
+  <p class="text-center px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
+  <button type="button" class="but">Learn More click</button>
+      </div>
+  </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="sec-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+        <h1>232 <br><h5>Clients</h5></h1>
+            </div>
+            <div class="col-12 col-md-3">
+                <h1>521 <br><h5>Projects</h5></h1>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h1>1453 <br><h5>Hours of support</h5></h1>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <h1>32 <br><h5>Worker </h5></h1>
+                                    </div>
+        </div>
+    </div>
+</section>
+    
+
+</section>
+<section class="sec-4 py-5">
+    <div class="container">
+        <div class="row align-content-center">
+            <div class="col-12">
+<h5>Our Menu</h5>
+<h1>Check Our Yummy Menu</h1>
+
+
+            </div>
+
+            <ul class="nav nav-pills my-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Starters"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        Starters </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Breakfast" type="button"
+                      role="tab" aria-controls="pills-profile" aria-selected="false"> Breakfast</button>
+              </li> 
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Lunch" type="button"
+                    role="tab" aria-controls="pills-profile" aria-selected="false"> Lunch</button>
+            </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Lunch1" type="button"
+                    role="tab" aria-controls="pills-profile" aria-selected="false"> Lunch1</button>
+            </li>
+
+
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="Starters" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row">
+                        <h3 class="data"> Starters</h3>
+                        <div class="col-12 col-md-4 py-3">
+                        
+                <img class="img-fluid control autoplay muted loop  " src="./images/menu-item-1.png">
+                <h1>Eos Luibusdam</h1>
+                <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                <h1 class="text-center" style="color: red;" >$3.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4 py-3">
+                   <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                   <h1>Est Eligendi</h1>
+                   <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                   <h1 class="text-center" style="color: red;" >$5.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-3.png">
+                            <h1>Aut Luia</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$5.95</h1>
+                                 </div>
+                                 <div class="col-12 col-md-4 py-3">
+                                    <img class="img-fluid" src="./images/menu/menu-item-4.png">
+                                    <h1>Est Eligendi</h1>
+                                    <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                    <h1 class="text-center" style="color: red;" >$5.95</h1>
+                                    </div>
+                                 <div class="col-12 col-md-4 py-3">
+                                <img class="img-fluid" src="./images/menu/menu-item-5.png">
+                                 <h1>Aut Luia</h1>
+                                         <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                         <h1 class="text-center" style="color: red;" >$5.95</h1>
+                               </div>
+                               <div class="col-12 col-md-4 py-3">
+                                <img class="img-fluid" src="./images/menu/menu-item-6.png">
+                                <h1>Est Eligendi</h1>
+                                <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                <h1 class="text-center" style="color: red;" >$5.95</h1>
+                               </div>
+                               <div class="col-12 col-md-4 py-3">
+                                <img class="img-fluid" src="../images/menu/menu-item-5.png">
+                                <h1>Est Eligendi</h1>
+                                <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                <h1 class="text-center" style="color: red;" >$5.95</h1>
+                                  </div>
+                                  <div class="col-12 col-md-4 py-3">
+                                     <img class="img-fluid" src="././images/menu/menu-item-3.png">
+                                     <h1>Est Eligendi</h1>
+                                     <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                     <h1 class="text-center" style="color: red;" >$5.95</h1>
+                                      </div>
+                                      <div class="col-12 col-md-4 py-3">
+                                         <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                                         <h1>Aut Luia</h1>
+                                         <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                                         <h1 class="text-center" style="color: red;" >$5.95</h1>
+              
+                                          </div>
+                               
+
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Breakfast" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="row py-5">
+                        <h3 class="data"> Breakfast</h3>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu-item-1.png">
+                            <h1>Magnam Tiste</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$7.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                           <h1>Aut Luia</h1>
+                           <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                           <h1 class="text-center" style="color: red;" >$5.95</h1>
+
+                        </div>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-3.png">
+                            <h1>Est Eligendi</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$5.95</h1>
+                            </div>
+
+                            <div class="col-12 col-md-4 py-3">
+                             <img class="img-fluid" src="./images/menu/menu-item-4.png">
+                             <h1>Eos Luibusdam</h1>
+                             <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                             <h1 class="text-center" style="color: red;" >$3.95</h1>
+                      </div>
+                      <div class="col-12 col-md-4 py-3">
+                        <img class="img-fluid" src="./images/menu/menu-item-5.png">
+                        <h1>Eos Luibusdam</h1>
+                        <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                        <h1 class="text-center" style="color: red;" >$3.95</h1>
+                         </div>
+                         <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-6.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                             </div>
+                             <div class="col-12 col-md-4 py-3">
+                   <img class="img-fluid" src="../images/menu/menu-item-5.png">
+                   <h1>Eos Luibusdam</h1>
+                   <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                   <h1 class="text-center" style="color: red;" >$3.95</h1>
+                     </div>
+                     <div class="col-12 col-md-4 py-3">
+                        <img class="img-fluid" src="././images/menu/menu-item-3.png">
+                        <h1>Eos Luibusdam</h1>
+                        <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                        <h1 class="text-center" style="color: red;" >$3.95</h1>
+                         </div>
+                         <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                             </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Lunch" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="row py-5">
+                        <h3 class="data"> Lunch</h3>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-1.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-3.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                                 </div>
+                            <div class="col-12 col-md-4 py-3">
+                             <img class="img-fluid" src="./images/menu/menu-item-4.png">
+                             <h1>Eos Luibusdam</h1>
+                             <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                             <h1 class="text-center" style="color: red;" >$3.95</h1>
+                      </div>
+                      <div class="col-12 col-md-4 py-3">
+                        <img class="img-fluid" src="./images/menu/menu-item-5.png">
+                        <h1>Eos Luibusdam</h1>
+                        <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                        <h1 class="text-center" style="color: red;" >$3.95</h1>
+                         </div>
+                         <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-6.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                             </div>
+                             <div class="col-12 col-md-4 py-3">
+                   <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                   <h1>Eos Luibusdam</h1>
+                   <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                   <h1 class="text-center" style="color: red;" >$3.95</h1>
+                     </div>
+                     <div class="col-12 col-md-4 py-3">
+                        <img class="img-fluid" src="./images/menu/menu-item-3.png">
+                        <h1>Eos Luibusdam</h1>
+                        <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                        <h1 class="text-center" style="color: red;" >$3.95</h1>
+                         </div>
+                         <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-4.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                             </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Lunch1" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="row py-5">
+                        <h3 class="data"> Dinner</h3>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-1.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img class="img-fluid" src="./images/menu/menu-item-2.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                        </div>
+                        <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-3.png">
+                            <h1>Eos Luibusdam</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$3.95</h1>
+                            
+
+                                 </div>
+                            <div class="col-12 col-md-4 py-3">
+                             <img class="img-fluid" src="./images/menu/menu-item-4.png">
+                          
+                             <h1>Magnam Tiste</h1>
+                             <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                             <h1 class="text-center" style="color: red;" >$7.95</h1>
+                      </div>
+                      <div class="col-12 col-md-4 py-3">
+                        <img class="img-fluid" src="./images/menu/menu-item-5.png">
+                        
+                        <h1>Magnam Tiste</h1>
+                        <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                        <h1 class="text-center" style="color: red;" >$7.95</h1>
+                         </div>
+                         <div class="col-12 col-md-4 py-3">
+                            <img class="img-fluid" src="./images/menu/menu-item-6.png">
+                          
+                            <h1>Magnam Tiste</h1>
+                            <p class="text-center">Lorem, deren, trataro, filede, nerada </p>
+                            <h1 class="text-center" style="color: red;" >$7.95</h1>
+                             </div>
+                    
+                  
+                    </div>
+                </div>
+
+
+
+
+            
+                    </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+
+
+<section class="sec-5 ">
+    <div class="container ">
+        <div class="row justify-content-center">
+        <div class="col-12">
+            <h5 class="text-center" style="font-size: 30px;">Testimonials</h5>
+           <h5 >What Are They Saying About Us</h5>
+        </div>
+        <div class="owl-carousel owl-theme py-5">
+            <div class="item"><img class="img-area img-fluid rounded rounded-circle" src="./images/testimonials/testimonials-1.jpg">
+          
+            </div>
+            <p>
+                <i class=" text-justify bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Aen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>Sara Wilsson</i>
+              </p>
+
+
+            <div class="item"><img class="img-area img-fluid rounded rounded-circle" src="./images/testimonials/testimonials-2.jpg">
+              
+            </div>
+            <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora es eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>      Saul Goodman</i>
+                
+      
+
+              </p>
+
+            <div class="item"><img class="img-area img-fluid rounded rounded-circle" src="./images/testimonials/testimonials-3.jpg">
+                
+            </div>
+            <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donect id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>Sara Wilsson</i>
+              </p>
+
+            <div class="item"><img class="img-area img-fluid rounded rounded-circle" src="./images/testimonials/testimonials-4.jpg">
+                
+            </div>
+            <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porcies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>Saul Goodman</i>
+              </p>
+
+            <div class="item"><img class="img-area img-fluid rounded rounded-circle" src="./images/testimonials/testimonials-3.jpg">
+                
+            </div>
+            <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>Saul Goodman</i>
+              </p>
+
+            <div class="item"><img class="img-area img-fluid  rounded rounded-circle" src="./images/testimonials/testimonials-4.jpg">
+               
+            </div>
+            <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bi bi-quote quote-icon-right"></i><br>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                <i>Saul Goodman</i>
+              </p>
+        </div>
+        
+        </div>
+
+    </div>
+    </div>
+
+</section>
+
+
+<section class="sec-6 py-5">
+    <div class="container">
+        <div class="row align-content-center">
+            <h1>Events</h1>
+            <h2>Share Your Moments In Our Restaurant</h2>
+        </div>
+        <div class="owl-carousel owl-theme py-5" style="width: 190vh;">
+            <div class="item"><img class="img-fluid card-img img-area" src="./images/events-2.jpg">
+      
+            </div>
+
+            <div class="item"><img class="img-fluid card-img img-area"  src="./images/events-1.jpg">
+                
+            </div>
+            <div class="item"><img class="img-fluid card-img img-area"  src="./images/events-3.jpg">
+      
+            </div>
+
+
+            <div class="item"><img class="img-fluid card-img img-area" src="./images/events-2.jpg">
+                <h4></h4>
+            </div>
+            <div class="item"><img class=" img-fluid card-img img-area" src="./images/events-3.jpg">
+                
+            </div>
+            <div class="item"><img class="img-fluid card-img " src="./images/events-1.jpg">
+             
+            </div>
+            <div class="item"><img class="img-fluid card-img " src="./images/events-3.jpg">
+             
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="sec-7 py-5">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+              <h5>Chefs</h5>
+              <h1>Our Proffesional Chefs</h1>
+            </div>
+            <div class="row py-5 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid card-img animate__animated animate__backInDown " style="animation-delay: 1.3s;" src="./images/chefs/chefs-1.jpg" >
+                    <div class="member">
+                        <h4>Walter White</h4>
+                        <span>Master Chef</span>
+                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                      </div>
+
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid card-img animate__animated animate__backInDown " style="animation-delay: 1.3s;" src="./images/chefs/chefs-2.jpg" >
+                    <div class="member">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Patissier</span>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                      </div>
+
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid card-img animate__animated animate__backInDown " style="animation-delay: 1.3s;" src="./images/chefs/chefs-3.jpg" >
+                    <div class="member">
+                        <h4>William Anderson</h4>
+                        <span>Cook</span>
+                        <p  class="text-justify">ero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi..</p>
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+ <section class="sec-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5>Book A Table</h5>
+                <h5>Book Your Stay With Us</h5>
+                <div class="row align-content-center"  >
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid card-img" src="./images/reservation.jpg">
+                    </div>
+                    <div class="col-12 col-md-8">
+<!--  -->
+<div class="data">
+        <input type="text" placeholder="Enter Your Name" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="text px-5" placeholder="Enter Your Email" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="phone px-5" placeholder="Phone" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="Date  py-5 px-5" placeholder="Phone" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="Time  py-5 px-5" placeholder="Time" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="#of people  py-5 px-5" placeholder="Off people" style="width:30%; font-size: 20px; text-align: center;">
+        <input type="textarea py-5"  row="30px" col="30px"  style="width:90% ; height: 200px;                  font-size: 20px; text-align: center;">
+
+
+
+   
+    </div>
+        
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <section class="sec-1">
+        <div class="container">
+          
+        <div class="row">
+
+        <div class="col-12 ">
+            <div class="frist">
+                <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-1">
+                            <div class="carousel-caption">
+              
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-2">
+                            <div class="carousel-caption">
+                             
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-3">
+                            <div class="carousel-caption">
+                      
+                            </div>
+                            
+                        </div>
+                    </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button> <!--thumbnails-->
+                    <div class="carousel-indicators">
+                        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button "><img class="img-fluid  card-img" src="./images/gallery/gallery-1.jpg"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" id="data" type="button"><img class="img-fluid" src="./images/gallery/gallery-2.jpg"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="./images/gallery/gallery-3.jpg"></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div></section>
+        
+
+
+            
+
+<section class="sec-9 py-5">
+    <div class="container">
+        <div class="row align-content-center">
+           
+        </div>
+        <div class="owl-carousel owl-theme py-5" style="width: 190vh;">
+            <div class="item"><img class="img-fluid card-img img-area" src="./images/gallery/gallery-1.jpg">
+      
+            </div>
+
+            <div class="item"><img class="img-fluid card-img img-area"  src="./images/gallery/gallery-2.jpg">
+                
+            </div>
+            <div class="item"><img class="img-fluid card-img img-area"  src="./images/gallery/gallery-3.jpg">
+      
+            </div>
+
+
+            <div class="item"><img class="img-fluid card-img img-area" src="./images/gallery/gallery-4.jpg">
+                <h4></h4>
+            </div>
+            <div class="item"><img class=" img-fluid card-img img-area" src="./images/gallery/gallery-5.jpg">
+                
+            </div>
+            <div class="item"><img class="img-fluid card-img " src="./images/gallery/gallery-6.jpg">
+             
+            </div>
+            <div class="item"><img class="img-fluid card-img " src="./images/gallery/gallery-7.jpg">
+             
+            </div>
+            <div class="item"><img class="img-fluid card-img " src="./images/gallery/gallery-8.jpg">
+             
+            </div>
+            
+        </div>
+    </div>
+</section> 
+
+<section class="sec-10">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <h5>Contact</h5>
+                <h1>Need Help? Contact Us</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.361281103485!2d-74.00871262476745!3d40.71006263773552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2s!4v1693203360795!5m2!1sen!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-11 py-5">
+    <div class="container">
+        <div class="row justify-content-center px-5 py-5">
+<div class="col-12 col-md-6 ">
+    <i class="bi bi-house-add" style="font-size: 30px; color: #e10b0b;">
+        Our Address<br>
+       <h5> A108 Adam Street, New York, NY 535022</h5>
+        </i>
+</div>
+<div class="col-12 col-md-6">
+    <i class="bi bi-envelope" style="font-size: 30px; color: #e10b0b;">
+        Our Address<br>
+       <h5> A108 Adam Street, New York, NY 535022</h5>
+        </i>
+</div>
+<div class="col-12 col-md-6">
+    <i class="bi bi-telephone-fill" style="font-size: 30px; color: #e10b0b;">
+        Our Address<br>
+       <h5> A108 Adam Street, New York, NY 535022</h5>
+        </i>
+</div>
+<div class="col-12 col-md-6">
+    <i class="bi bi-share-fill" style="font-size: 30px; color: #e10b0b;">
+        Our Address<br>
+       <h5> A108 Adam Street, New York, NY 535022</h5>
+        </i>
+</div>
+        </div>
+    </div>
+</section>
+<section class="sec-11">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12  col-md-6">
+                <input  type="text" id="text" placeholder="Your Name"  style="width: 100%; height: 50px; text-align: start; color: #e10b0b;">
+
+            </div>
+            <div class="col-12  col-md-6">
+                <input  type="text" id="text" placeholder="Your Email"  style="width: 100%; height: 50px; text-align:start; color: #e10b0b;">
+
+            </div>
+            <div class="col-12 py-3">
+                <input  type="text" id="text" placeholder="Subject"  style="width: 100%; height: 50px; text-align: start; color: #e10b0b;">
+
+            </div>
+            <div class="col-12 py-3">
+       <textarea name="Message" id="Message" cols="20" rows="10" style="width: 100%;">Messasge</textarea>
+       <button type="button" class="btn btn-primary">Send Message</button>
+            </div>
+         
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 py-4">
+                <i class=" px-4 bi bi-geo-alt-fill " style="font-size: 20px;  color: #eeeeee;">Address</i>
+     <h5 class="text-start" style="font-size: 15px; color: #eeeeee;">A108 Adam Street
+        New York, NY 535022 - US</h5>
+
+            </div>
+            <div class="col-12 col-md-3 py-4">
+                <i class=" px-4 bi bi-phone-fill" style="font-size: 20px;  color: #eeeeee;">Address</i>
+     <h5 class="text-start" style="font-size: 15px; color: #eeeeee;">Phone: +1 5589 55488 55
+        <h5 class="text-start" style="font-size: 15px; color: #eeeeee;">   Email: info@example.com</h5>
+
+     
+            </div>
+            <div class="col-12 col-md-3 py-4">
+                <i class=" px-4  bi bi-clock-history" style="font-size: 20px;  color: #eeeeee;">Address</i>
+     <h5 class="text-start" style="font-size: 15px; color: #eeeeee;">Mon-Sat: 11AM - 23PM
+        <h5 class="text-start" style="font-size: 15px; color: #eeeeee;">unday: Closed</h5>
+
+     
+            </div>
+            <div class="col-12 col-md-3 py-4">
+                <i class=" px-4  bi bi-clock-history" style="font-size: 20px;  color: #eeeeee;">Follow Us</i>
+<div class="social">
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+
+</div>
+</div>
+<div class="row align-content-center">
+    <div class="col-12 py-4">
+        <footer style="color: #eeeeee;">
+            © Copyright Yummy. All Rights Reserved <br>
+            Designed by BootstrapMade
+        </footer>
+    </div>
+</div>
+
+     
+            </div>
+
+          
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery.min.js"></script>
+            <script src="./js/owl.carousel.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+            integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+               <script>
+
+                $(document).ready()
+                {
+                    $('.owl-carousel').owlCarousel({
+                        loop: true,
+                        items: 4,
+                        margin: 10,
+                        nav: true,
+                        responsive: {
+                            0: {
+                                items: 3
+                            },
+                            600: {
+                                items: 4
+                            },
+                            1000: {
+                                items: 5
+                            }
+                        }
+                    })
+
+                }
+            </script>
+
+
+<script>
+
+// $(document).ready()
+// {
+//     $('.owl-carousel1').owl-carousel1({
+//         loop: true,
+//         items: 4,
+//         margin: 10,
+//         nav: true,
+//         responsive: {
+//             0: {
+//                 items: 3
+//             },
+//             600: {
+//                 items: 4
+//             },
+//             1000: {
+//                 items: 5
+//             }
+//         }
+//     })
+
+// } 
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
